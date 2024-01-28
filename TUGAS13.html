@@ -1,0 +1,101 @@
+<html>
+<title>TUGAS ANIMATE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+	
+<body>
+	<style>
+		body {
+		  background-color: black;
+		}
+		</style>
+	
+<center>
+<div class="w3-container">
+<img src="JEKETI.jpg" width="100%" height="40%">
+</div>
+<div class="w3-bar w3-grey">
+ <button class="w3-bar-item w3-button" onclick="openKota('Atas')">HOME</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">RANDY</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">KATRINA</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">SHANI</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Mendekat')">FREYA</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-button">MEMBER LAIN JKT</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Kegelapan')">ASHEL</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Menghilang')">MARSHA</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Putar')">CHIKA</button>
+	</div>
+ </div>
+ </div>
+<div id="Atas" class="w3-container kota w3-animate-top" style="display:none">
+	<font color="white"> <h2>JKT48</h2>
+ DISINI SAYA AKAN MEMPERKENALKAN MEMBER MEMBER JKT 48
+ <br>
+ <p></p>
+ <img src="memberjkt.jpg" width="300">
+ </div>
+<div id="Bawah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>PROFIL SAYA</h2>
+ Nama : Randy Fawwaz Aditya 
+ NIM  : 10123106
+ Kelas: INFORMATIKA-3
+ <br>
+ <p></p>
+ <img src="Ran.jpg" width="500">
+ </div>
+<div id="Kiri" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+ KATRINA JKT48
+ <br>
+ <p></p>
+ <img src="katrinaJKT48.jpg" width="500">
+</div>
+<div id="Kanan" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+ SHANI JKT48
+ <br>
+ <p></p>
+ <img src="shaniJKT48.jpg" width="500">
+</div>
+<div id="Mendekat" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+FREYA JKT48
+ <br>
+ <p></p>
+ <img src="freyaJKT48.jpg" width="500">
+</div>
+<div id="Kegelapan" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+ ASHEL JKT48
+ <br>
+ <p></p>
+ <img src="ASHELJKT48.jpg" width="500">
+</div>
+<div id="Menghilang" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+ MARSHA JKT48
+ <br>
+ <p></p>
+ <img src="MARSHAJKT48.jpg" width="500">
+</div>
+<div id="Putar" class="w3-container kota w3-spin" style="display:none">
+ <h2>MEMBER JKT 48</h2>
+ CHIKA JKT48
+ <br>
+ <p></p>
+ <img src="CHIKAJKT48.jpg" width="500">
+</div>
+<script>
+function openKota(namakota) {
+ var i; 
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html
